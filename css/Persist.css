@@ -1,0 +1,51 @@
+/*
+	 CSS-Tricks Example
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+*	{ 
+  margin: 0; 
+  padding: 0; 
+}
+body { 
+  font: 14px Georgia, serif; 
+}
+h1 {
+  font: 32px Georgia, Serif;
+  margin: 0 0 20px 0;
+}
+p {
+  margin: 0 0 20px 0;
+}
+#page-wrap { 
+  width: 500px; 
+  margin: 100px auto; 
+}
+.spacer { 
+  height: 600px; 
+}
+table {
+  border-collapse: collapse;
+}
+th { 
+  background-color: lightgrey; 
+  padding: 10px; 
+  width: 200px; 
+  text-align: left;
+}
+tr:nth-child(odd) {
+  background: #eee;
+}
+td { 
+  padding: 10px; 
+  width: 200px; 
+}
+
+.some-other-area {
+  margin: 300px 0;
+  line-height: 2;
+}
+h2 {
+
+}

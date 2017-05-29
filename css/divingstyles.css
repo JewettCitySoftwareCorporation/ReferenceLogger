@@ -1,0 +1,147 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+body  {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background: #003e63 url(images/siteBackground.jpg) repeat-x left top;
+	color: #ffffff;
+}
+a {
+	color:#ffe200;
+	text-decoration:underline;
+}
+a:hover {
+	color:#ffe200;
+	text-decoration:none;
+}
+.logo {
+	text-align:right;
+	color:#ffe200;
+	font-size:60px;
+}
+.logo span {
+	font-size:60px;
+	color:#FFF;
+}
+.author {
+	text-align:right;
+	margin-right:27px;
+}
+.author a {
+	color:#fff;
+}
+.slogan1 {
+	font-size:60px;
+	color:#FFF;
+}
+.slogan2 {
+	font-size:60px;
+	color:#FFF;
+	padding-left:200px;
+}
+.mainMenu {
+	padding:140px 0 0 0;
+}
+.mainMenu li {
+	list-style:none;
+	display:inline;
+	margin-right:50px;
+}
+.mainMenu li a {
+	color:#FFF;
+	font-size:24px;
+	text-decoration:none;
+}
+.mainMenu li a:hover {
+	color:#ffe200;
+	font-size:24px;
+}
+.mainMenu #active a {
+	color:#ffe200;
+	font-size:24px;
+}
+.pageBackground {
+	background:url(images/backgroundPage.jpg) no-repeat right top;
+	min-height:832px;
+}
+#container { 
+	width: 800px;  
+	margin: 0 auto; 
+} 
+#header {
+	height:398px;
+} 
+#mainContent h2 {
+	color:#43f6d5;
+	font-size:14px;
+	font-weight:bold;
+	padding:20px 0 10px 0;
+}
+#mainContent h3 {
+	color:#37362b;
+	font-size:14px;
+	font-weight:bold;
+	padding:20px 0 10px 0;
+}
+.pageTop {
+	background:url(images/contentTop.png) no-repeat left top;
+	height:16px;
+}
+.pageBody {
+	background:url(images/contentBody.png) repeat-y left top;
+	padding:0 30px;
+}
+.freeWeb {
+	float:left;
+	width:265px;
+}
+.freeWebsiteTemplates li {
+	list-style:none;
+	margin:4px 0;
+}
+.professional {
+	margin-left:300px;
+}
+.freeWebsiteTemplates {
+	float:left;
+	width:210px;
+	background:#22bac4;
+	padding:0 0 30px 20px;
+}
+.freeWebsiteTemplates a {
+	color:#ffffff;
+}
+.facebookTemplates {
+	margin-left:250px;
+}
+.facebookTemplates img {
+	text-align:center;
+	border:0;
+}
+.pageFooter {
+	background:url(images/contentBottom.png) no-repeat left top;
+	height:19px;
+}
+
+/**
+ * Footer Styles
+ */
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  
+ 
+}
+
+.clearfloat { 
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}

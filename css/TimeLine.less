@@ -1,0 +1,311 @@
+//Colors
+
+@color1: #596c7c; //slate
+@color2: #d1d8de; //bluish gray
+@color3: #e9edf0; //bluish gray
+@color4: #f7f9fa; //lighter bluish gray
+
+//Measurements
+
+@eventWidth: 300px;
+
+//Mixins
+
+.border-radius(@radius) {
+  	-webkit-border-radius: @radius;
+		-moz-border-radius: @radius;
+		-o-border-radius: @radius;
+		border-radius: @radius;
+}
+
+.box-shadow (@shadow1, @shadow2: transparent 0 0 0, @shadow3: transparent 0 0 0, @shadow4: transparent 0 0 0, @shadow5: transparent 0 0 0, @shadow6: transparent 0 0 0) {
+		-webkit-box-shadow: @shadow1, @shadow2, @shadow3, @shadow4, @shadow5, @shadow6;
+		-moz-box-shadow: @shadow1, @shadow2, @shadow3, @shadow4, @shadow5, @shadow6;
+		box-shadow: @shadow1, @shadow2, @shadow3, @shadow4, @shadow5, @shadow6;
+}
+
+.2-color-gradient (@colorStart, @colorEnd, @position1: 0%, @position2: 100%, @angle: 90deg, @oldangle1: left top, @oldangle2: right bottom, @iegradtype: 0) {
+		background-color: @colorStart; /* Old browsers */
+		background-image: -moz-linear-gradient(@angle,  @colorStart @position1, @colorEnd @position2); /*FF3.6+ */
+		background-image: -webkit-gradient(@angle, @oldangle1, @oldangle2, color-stop(@position1, @colorStart), color-stop(@position2, @colorEnd)); /*Chrome,Safari4+ */
+		background-image: -webkit-linear-gradient(@angle,  @colorStart @position1, @colorEnd @position2); /*Chrome10+,Safari5.1+ */
+		background-image: -o-linear-gradient(@angle,  @colorStart @position1, @colorEnd @position2); /* Opera 11.10+ */
+		background-image: -ms-linear-gradient(@angle,  @colorStart @position1, @colorEnd @position2); /*IE10+ */
+		background-image: linear-gradient(@angle,  @colorStart @position1, @colorEnd @position2); /* W3C */
+		filter: ~"progid:DXImageTransform.Microsoft.gradient( startColorstr='@{colorEnd}', endColorstr='@{colorStart}', GradientType='@{iegradtype}' )"; /* IE6-9 */
+}
+
+.opacity (@opacity, @ieopacity) {
+		opacity: @opacity;
+		filter: "alpha(opacity=@{ieopacity})";
+  		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{ieopacity})";
+}
+
+.transition (@transition) {
+		-webkit-transition: @transition;
+		-moz-transition: @transition;
+		-ms-transition: @transition;
+		-o-transition: @transition;
+}
+
+.transform (@transform) {
+		-webkit-transform: @transform;
+		-moz-transform: @transform;
+		-ms-transform: @transform;
+		-o-transform: @transform;
+}
+
+.transform-origin (@originx, @originy) {
+		-webkit-transform-origin: @originx @originy;
+		-moz-transform-origin: @originx @originy;
+		-ms-transform-origin: @originx @originy;
+		-o-transform-origin: @originx @originy;
+}
+
+//CSS
+
+* {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		-webkit-font-smoothing: antialiased;
+}
+
+p {
+  	color: @color1;
+		font-family: helvetica, arial, san-serif;
+		font-size: 0.875em;
+		font-weight: normal;
+		text-shadow: 0 1px #ffffff;
+}
+
+#history {
+  	display: block;
+  	position: relative;
+		margin: 50px auto;
+  	text-align: center;
+}
+
+#timeline_track {
+		display: block;
+		position: relative;
+  	margin: 0 auto;
+		width: 6px;
+		height: 800px;
+		background-color: @color3;
+//LESS Mixins
+		.border-radius (3px);
+		.box-shadow (0 2px 2px rgba(0,0,0,0.25) inset);
+}
+
+#historic_event_1, #historic_event_2, #historic_event_3, #historic_event_4 {
+		display: table;
+		position: absolute;
+  	width: @eventWidth;
+		cursor: pointer;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+//LESS Mixins
+		.opacity (.50, 50);
+		.transition (opacity 600ms ease);
+}
+
+#historic_event_1:hover, #historic_event_1.current, #historic_event_2:hover, #historic_event_2.current, #historic_event_3:hover, #historic_event_3.current, #historic_event_4:hover, #historic_event_4.current {
+//LESS Mixins
+		.opacity (1.0, 100);
+}
+
+#historic_event_1 {
+		top: 100px;
+  	left: 50%;
+  	margin-left: -@eventWidth*0.04;
+}
+
+#historic_event_2 {
+		top: 300px;
+  	left: 50%;
+  	margin-left: -@eventWidth*0.91; 
+}
+
+#historic_event_3 {
+		top: 500px;
+		left: 50%;
+  	margin-left: -@eventWidth*0.04;
+}
+
+#historic_event_4 {
+		top: 700px;
+  	left: 50%;
+  	margin-left: -@eventWidth*0.91; 
+}
+
+.historic_year {
+		display: table-cell;
+		vertical-align: middle;
+  	width: 33%;
+  	text-align: center;
+}
+
+#historic_text_1, #historic_text_2, #historic_text_3, #historic_text_4 {
+		display: table-cell;
+		vertical-align: middle;
+  	width: 53%;
+  	text-align: left;
+}
+
+.historic_dot_wrapper {
+		display: table-cell;
+		vertical-align: middle;
+  	width: 13%;
+  	text-align: center;
+}
+
+.historic_dot {
+  	display: block;
+  	position: relative;
+		width: 14px;
+		height: 14px;
+  	margin: 0 auto;
+		background-color: @color3;
+		cursor: pointer;
+		z-index: 100;
+//LESS Mixins
+		.border-radius (100%);
+		.box-shadow (0 0 0 1px @color2 inset, 0 2px 0 #ffffff inset, 0 2px 0 @color2);
+}
+
+#historic_event_1:hover #historic_dot_1, #historic_event_2:hover #historic_dot_2, #historic_event_3:hover #historic_dot_3, #historic_event_4:hover #historic_dot_4, {
+//LESS Mixin
+		.transform (scale(1.15));
+}
+
+#historic_dot_1, #historic_dot_2, #historic_dot_3, #historic_dot_4 {
+		display: block;
+		position: relative;
+  	margin: 0 auto;
+  	left: -7px;
+}
+
+#history_clock {
+		display: block;
+		position: absolute;
+		top: 100px;
+		left: 50%;
+  	margin-left: -17px;
+		width: 34px;
+		height: 34px;
+		background-color: @color4;
+		z-index: 200;
+//LESS Mixins
+		.border-radius (100%);
+		.box-shadow (0 0 0 1px @color2 inset, 0 2px 0 #ffffff inset, 0 2px 0 @color2);
+		.transition (top 1s cubic-bezier(0.645, 0.045, 0.355, 1.000));
+}
+
+#history_clock.animate1 {
+		top: 300px;
+}
+
+#history_clock.animate2 {
+		top: 500px;
+}
+
+#history_clock.animate3 {
+		top: 697px;
+}
+
+#clockface {
+		display: block;
+		position: relative;
+		top: 4px;
+		left: 4px;
+		width: 26px;
+		height: 27px;
+//LESS Mixins
+		.border-radius (100%);
+		.2-color-gradient (@color1, darken(@color1, 13%), 25%, 75%);
+		.box-shadow (0 0 0 1px @color2, 0 0 20px rgba(0,0,0,0.25) inset);
+}
+
+#clockglare {
+		display: block;
+		position: absolute;
+		top: 2px;
+		left: 5px;
+		width: 16px;
+		height: 8px;
+//LESS Mixins
+		.border-radius (100%);
+		.2-color-gradient (rgba(255,255,255,0), rgba(255,255,255,.40), 0%, 100%);
+}
+
+#clockarm_1, #clockarm_2 {
+//LESS Mixins
+		.transition (all 1s cubic-bezier(0.645, 0.045, 0.355, 1.000));
+}
+
+#clockarm_1 {
+		display: block;
+		position: absolute;
+		top: 4px;
+		left: 12px;
+		width: 2px;
+		height: 10px;
+		background-color: #ffffff;
+		z-index: 10;
+//LESS Mixins
+		.border-radius (1px);
+		.box-shadow (0 0 1px rgba(0,0,0,0.75));
+		.transform-origin (50%, 10px);
+}
+
+#clockarm_2 {
+		display: block;
+		position: absolute;
+		top: 6px;
+		left: 12px;
+		width: 2px;
+		height: 9px;
+		background-color: #ffffff;
+		z-index: 20;
+//LESS Mixins
+		.border-radius (1px);
+		.box-shadow (0 0 1px rgba(0,0,0,0.75));
+		.transform (rotate(0.25turn));
+		.transform-origin (50%, 8px);
+}
+
+#history_clock.animate1 #clockarm_1 {
+//LESS Mixins
+		.transform (rotate(10.85turn));
+		.transform-origin (50%, 10px);
+}
+
+#history_clock.animate1 #clockarm_2 {
+//LESS Mixins
+		.transform (rotate(10.25turn));
+		.transform-origin (50%, 8px);
+}
+
+#history_clock.animate2 #clockarm_1 {
+//LESS Mixins
+		.transform (rotate(13.11turn));
+		.transform-origin (50%, 10px);
+}
+
+#history_clock.animate2 #clockarm_2 {
+//LESS Mixins
+		.transform (rotate(13.34turn));
+		.transform-origin (50%, 8px);
+}
+
+#history_clock.animate3 #clockarm_1 {
+//LESS Mixins
+		.transform (rotate(16.46turn));
+		.transform-origin (50%, 10px);
+}
+
+#history_clock.animate3 #clockarm_2 {
+//LESS Mixins
+		.transform (rotate(16.84turn));
+		.transform-origin (50%, 8px);
+}
