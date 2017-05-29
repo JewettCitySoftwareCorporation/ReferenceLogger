@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jewett City Software Corporation</title>
+    <meta name="description" content="jcsc marketing.">
+    <meta name="author" content="Luke@JCSC.biz">
+
+
+    <!--  
+
+                        
+             ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ 
+            ||L |||u |||k |||e |||@ |||j |||c |||s |||c |||. |||b |||i |||z ||
+            ||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__||
+            |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
+
+     -->
+
+    <link rel="shortcut icon" href="../favico.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/Splash_styles.css">
+    <link rel="stylesheet" href="../css/demo.css">
+
+
+    <script src="../js/modernizr-1.5.min.js"></script>
+
+    <link rel="stylesheet" href="../css/normalize.css">
+
+
+    <style>
+        /**
+ * Footer Styles
+ */
+        
+        .footer {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 0;
+            background-color: #efefef;
+            text-align: center;
+        }
+        /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+        
+        .table-of-contents {
+            float: right;
+            width: 40%;
+            background: #eee;
+            font-size: 0.8em;
+            padding: 1em 2em;
+            margin: 0 0 0.5em 0.5em;
+        }
+        
+        .table-of-contents ul {
+            padding: 0;
+        }
+        
+        .table-of-contents li {
+            margin: 0 0 0.25em 0;
+        }
+        
+        .table-of-contents a {
+            text-decoration: none;
+        }
+        
+        .table-of-contents a:hover,
+        .table-of-contents a:active {
+            text-decoration: underline;
+        }
+        
+        h3:target {
+            animation: highlight 1s ease;
+        }
+        
+        @keyframes highlight {
+            from {
+                background: yellow;
+            }
+            to {
+                background: white;
+            }
+        }
+    </style>
+
+
+    <style>
+        /*
+ * CSS3 Hello Bar
+ * @version 1.0
+ * @author Martin Ivanov
+ * @url developer website: http://wemakesites.net/
+ * @url developer twitter: https://twitter.com/#!/wemakesitesnet
+ * @url developer blog http://acidmartin.wordpress.com/
+ **/
+        
+         :root .acidjs-hellobar,
+        .acidjs-hellobar label,
+        .acidjs-hellobar label span {
+            display: block;
+        }
+        
+        .acidjs-hellobar,
+        .acidjs-hellobar * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .acidjs-hellobar>div,
+        .acidjs-hellobar label span {
+            line-height: 30px;
+            text-align: center;
+            color: #fff;
+            background: #666;
+            transition: margin 300ms ease-in-out;
+            box-shadow: 0 0 2px 2px rgba(58, 58, 58, .50);
+        }
+        
+        .acidjs-hellobar,
+        .acidjs-hellobar input {
+            display: none;
+        }
+        
+        .acidjs-hellobar {
+            position: fixed;
+            z-index: 250;
+            top: 0;
+            left: 0;
+            width: 100%;
+            font-family: Arial, Helvetica, Verdana, Sans-serif;
+            color: #000;
+            cursor: default;
+            /* these properties are required only by the demo page at http://experiments.wemakesites.net/css3-hello-bar.html */
+            -webkit-pointer-events: none;
+            -moz-pointer-events: none;
+            pointer-events: none;
+        }
+        /* these rules are required only by the demo page at http://experiments.wemakesites.net/css3-hello-bar.html */
+        
+        .acidjs-hellobar>div,
+        .acidjs-hellobar label {
+            -webkit-pointer-events: all;
+            -moz-pointer-events: all;
+            pointer-events: all;
+        }
+        
+        .acidjs-hellobar>div {
+            margin-top: -37px;
+            padding: 0 64px;
+            border-bottom: solid 3px #fff;
+            font-size: 12px;
+        }
+        
+        .acidjs-hellobar>div>div {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        
+        .acidjs-hellobar label {
+            float: right;
+            margin: 0 16px 0 0;
+        }
+        
+        .acidjs-hellobar label span {
+            width: 30px;
+            height: 30px;
+            font-size: 27px;
+            text-shadow: 0px 1px rgba(0, 0, 0, .75);
+            border: solid 3px #fff;
+            border-top: 0;
+            border-radius: 0 0 4px 4px;
+            cursor: pointer;
+        }
+        
+        .acidjs-hellobar input~label span:first-child {
+            border-color: transparent;
+            box-shadow: none;
+            background: none;
+        }
+        
+        .acidjs-hellobar input:not(:checked)~label span:first-child {
+            opacity: 0;
+        }
+        
+        .acidjs-hellobar input:checked~label span:first-child {
+            opacity: 1;
+            transition: opacity 300ms 300ms ease-in-out;
+        }
+        
+        .acidjs-hellobar input:not(:checked)~label span:last-child {
+            margin-top: -33px;
+        }
+        
+        .acidjs-hellobar input:checked~label span:last-child {
+            margin-top: -70px;
+        }
+        
+        .acidjs-hellobar input:checked~div {
+            margin-top: 0;
+        }
+        /* Colors */
+        
+        .acidjs-hellobar.acidjs-hellobar-e34c26>div,
+        .acidjs-hellobar.acidjs-hellobar-e34c26 label span {
+            background: #e34c26;
+        }
+        
+        .acidjs-hellobar.acidjs-hellobar-78ba00>div,
+        .acidjs-hellobar.acidjs-hellobar-78ba00 label span {
+            background: #78ba00;
+        }
+        
+        .acidjs-hellobar.acidjs-hellobar-1b58b8>div,
+        .acidjs-hellobar.acidjs-hellobar-1b58b8 label span {
+            background: #1b58b8;
+        }
+        
+        .acidjs-hellobar.acidjs-hellobar-ff2e12>div,
+        .acidjs-hellobar.acidjs-hellobar-ff2e12 label span {
+            background: #ff2e12;
+        }
+        
+        .acidjs-hellobar.acidjs-hellobar-aa40ff>div,
+        .acidjs-hellobar.acidjs-hellobar-aa40ff label span {
+            background: #aa40ff;
+        }
+        
+        .acidjs-hellobar.acidjs-hellobar-639>div,
+        .acidjs-hellobar.acidjs-hellobar-639 label span {
+            background: #639;
+            /* My thoughts are with you and your family Eric Meyer... */
+        }
+    </style>
+
+
+
+    <script src="../js/prefixfree.min.js"></script>
+    <!--[if lt IE 9]>
+  	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+    <div class="contents">
+
+        <!-- css3 hello bar -->
+        <div class="acidjs-hellobar acidjs-hellobar-639">
+            <input type="checkbox" id="acidjs-hellobar-switcher" checked="checked" />
+            <label for="acidjs-hellobar-switcher">
+        <span>⇧</span>
+        <span>⇩</span>
+    </label>
+            <div>
+                <div>Built by jcsc.biz to help manage giving credit for work performed, and to help us document our conclustions when you read one of our case studies. Ain't it cool?</div>
+            </div>
+        </div>
+        <!-- / css3 hello bar -->
+
+        <header class="navbar-wrapper">
+            <h1><a href="index.html">Referance Logger:</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="Donate.html">Donate!</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="index.html">Logger</a></li>
+                    <li><a href="#YouAreHere" class="active">⇩</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <!--===============================Start Notification====================================================-->
+        <section id="main-content"><br/><br/>
+            <center>
+                &nbsp;&nbsp;&nbsp;Built by Luke@jcsc.biz
+                <pre>
+ ┬┌─┐┌─┐┌─┐ ┌┐ ┬┌─┐
+ ││  └─┐│   ├┴┐│┌─┘
+└┘└─┘└─┘└─┘o└─┘┴└─┘
+</pre></center>
+
+        </section>
+
+        <!--====================================End Notification================================================-->
+
+
+
+        <!-- This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.</div> -->
+
+        <div class="footer">
+            <small>
+					&copy; 2017  ~  Created by::  <a href="http://jcsc.biz">Luke@jcsc.biz</a>
+				</small></div>
+
+</body>
+
+</html>
