@@ -1,22 +1,26 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
-  "devDependencies": {
-    "electron": "~1.6.2"
-  }
+    "name": "jcsc-ReferenceLogger",
+    "version": "1.0.0",
+    "description": "A cross platform task bar application to log & manage references.",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "repository": "https://github.com/JewettCitySoftwareCorporation/ReferenceLogger",
+    "keywords": [
+        "Reference",
+        "Foot Notes",
+        "Citation",
+        "Electron",
+        "Intellectual Honesty"
+    ],
+    "author": "Luke@jcsc.biz",
+    "license": "CC-license.jcsc.biz",
+    "devDependencies": {
+        "electron": "~1.6.2"
+    },
+    "dependencies": {
+        "electron-positioner": "^3.0.0",
+        "electron-settings": "^3.0.14"
+    }
 }
