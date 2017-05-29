@@ -1,0 +1,235 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	background:url(../img/background.png) top left;
+	margin:0;
+	padding:0;
+	font-family:"Myriad Pro", Arial, sans-serif;
+	color:#FFFFFF;
+}
+
+#wrapper {
+		width: 1000px;
+		margin:0 auto 10px;
+		overflow:hidden;
+}
+
+header {
+		border-bottom:1px #666 solid;
+		padding:10px 0 0;
+		overflow:hidden;
+		margin:0 0 20px 0;
+		-webkit-box-shadow: 0px 1px 4px #000000;
+		-moz-box-shadow: 0px 1px 4px #000000;
+		box-shadow: 0px 1px 4px #000000;
+}
+
+header h1{
+		text-indent:-10000px;
+		height:80px;
+		background:url(../img/logo.png) top left no-repeat;
+}
+
+header nav {
+		border-left:1px #666 solid;
+		border-right:1px #666 solid;
+		background: #333333; /* old browsers */
+		background: -moz-linear-gradient(top, #3f3f3f 0%, #333333 100%); /* firefox */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f3f3f), color-stop(100%,#333333)); /* webkit */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3f3f', endColorstr='#333333',GradientType=0 ); /* ie */
+		overflow:hidden;
+}
+
+header nav ul{
+		border-top:1px #666 solid;
+}
+
+header nav ul li a{
+	float:left;
+	display:block;
+	padding:10px;
+	background: #333333; /* old browsers */
+	background: -moz-linear-gradient(top, #3f3f3f 0%, #333333 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f3f3f), color-stop(100%,#333333)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3f3f', endColorstr='#333333',GradientType=0 ); /* ie */
+	border-right:1px solid #666;
+	text-decoration:none;
+	color: #999;
+}
+
+header nav ul li a:hover{
+	background: #292929; /* old browsers */
+	background: -moz-linear-gradient(top, #222222 0%, #292929 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#222222), color-stop(100%,#292929)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#292929',GradientType=0 ); /* ie */
+	color:#FFF;
+}
+
+#wrapper aside{
+		width:150px;
+		float:left;
+		padding:10px 10px 10px 10px;
+		background-color:#292929;
+}
+
+#wrapper aside h1{
+		padding:0 0 10px 0;
+}
+
+#wrapper aside nav ul{
+	border:1px solid #666;
+}
+
+#wrapper aside nav ul li a{
+	display:block;
+	padding:10px;
+	background: #333333; /* old browsers */
+	background: -moz-linear-gradient(top, #3f3f3f 0%, #333333 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f3f3f), color-stop(100%,#333333)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3f3f', endColorstr='#333333',GradientType=0 ); /* ie */
+	border-bottom:1px solid #666;
+	text-decoration:none;
+	color: #999;
+}
+
+#wrapper aside nav ul li a:hover{
+	background: #292929; /* old browsers */
+	background: -moz-linear-gradient(top, #222222 0%, #292929 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#222222), color-stop(100%,#292929)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#292929',GradientType=0 ); /* ie */
+	color: #fff;
+}
+
+#wrapper section {
+	float:right;
+  padding:10px;
+  width:800px;
+	background-color: #242424;
+}
+
+#wrapper section article{
+  padding:10px;
+	background-color: #333;
+	margin:0 0 10px 0;
+}
+
+#wrapper section article h1{
+	margin-bottom:5px;
+	font-size:1.4em;
+}
+
+#wrapper section article p{
+	color:#999;
+}
+
+#footerWrap {
+	border-top:1px #666 solid;
+	background-color:#242424;
+	overflow:hidden;
+}
+
+#footerWrap aside{
+	width:1000px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+#footerWrap aside nav{
+		float:left;
+		width:310px;
+		margin:10px;
+}
+
+#footerWrap aside section#socialMedia{
+		float:right;
+		width:310px;
+		margin:10px 0 10px 10px;
+		text-align:right;
+		height:92px;
+		padding-top:98px
+}
+
+#footerWrap aside section h1{
+	margin-bottom:10px;
+	font-size:1.4em;
+}
+
+#footerWrap aside nav h1{
+	margin-bottom:10px;
+	font-size:1.4em;
+}
+
+#footerWrap aside nav li{
+	line-height:1.5;
+}
+
+#footerWrap aside nav li a{
+	color:#999;
+	text-decoration:none;
+}
+
+#footerWrap aside nav li a:hover{
+	color:#fff;
+}
+
+footer {
+	width:1000px;
+	margin:0 auto;
+	padding:10px 0 20px;
+	font-size:.9em;
+	border-top:1px #3E3E3E solid;
+	background-color:#242424;
+}

@@ -1,0 +1,31 @@
+* { margin: 0; padding: 0; }
+body { font: 12px "Lucida Grande", Helvetica, Sans-Serif; }
+table { border-collapse: collapse; }
+#page-wrap { padding: 50px; }
+
+h1 { font: bold 40px Helvetica; letter-spacing: -2px; margin: 0 0 10px 0; }
+
+.clear { clear: both; }
+
+
+#order-table td.product-title {text-align: left; }
+#order-table { width: 100%; }
+#order-table td { padding: 5px; }
+#order-table th { padding: 5px; background: black; color: white; text-align: center; }
+#order-table td.row-total { text-align: right; }
+#order-table td input { width: 75px; text-align: center; }
+#order-table tr.even td { background: #eee; }
+.num-pallets input { background: white; }
+.num-pallets input.warning { background: #ffdcdc; }
+
+#order-table td .total-box, .total-box { border: 3px solid green; width: 70px; padding: 3px; margin: 5px 0 5px 0; text-align: center; font-size: 14px; }
+
+#shipping-subtotal { margin: 0; }
+
+#shipping-table { width: 350px; float: right; }
+#shipping-table td { padding: 5px; }
+
+#shipping-table th { padding: 5px; background: black; color: white; text-align: left; }
+#shipping-table td input { width: 69px;  text-align: center; }
+
+#order-total { font-weight: bold; font-size: 21px; width: 110px; }

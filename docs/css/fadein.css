@@ -1,0 +1,12 @@
+.demo3 {
+  -webkit-transition:opacity .5s ease-out;
+  -moz-transition:opacity .5s ease-out;
+  -ms-transition:opacity .5s ease-out;
+  -o-transition:opacity .5s ease-out;
+  transition:opacity .5s ease-out;
+  opacity:0.2;
+}
+
+.demo3:hover {
+  opacity:1;
+}

@@ -1,0 +1,229 @@
+a {
+  text-decoration: none;
+}
+.share-wrapper, 
+.share-action {
+  width: 32px;
+  height: 32px;
+}
+.share-wrapper {
+  font: 14px, 'FontAwesome';
+  position: relative;
+  margin: 50px auto;
+  
+}
+.rounded {
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+}
+.share-action {
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 5;
+  position: relative;
+  background: linear-gradient(#8df 0%, #29d 100%);
+  box-shadow: 0 1px 5px rgba(255, 255, 255, 0.5) inset, 0 0 0px 1px rgba(33, 112, 178, 0.5);
+  line-height: 33px;
+  color: #fff;
+  
+}
+
+.share-btn {
+  display:inline-block;
+  width: 49%;
+  height: 49%;
+  position: absolute;
+  z-indez:1;
+  border-color: #92888f;
+  border-style: solid;
+  border-width: 0;
+  font-size: 25px;
+  color: #777777;
+}
+.share-btn:hover {
+  background:linear-gradient(#8df 0%, #29d 100%);
+  color: #ffffff;
+  text-shadow: 0 -1px #4298e0;
+}
+.share-btn.tl {
+  right: 50%;
+  bottom: 50%;
+  border-top-left-radius: 100%;
+  
+  text-indent: 5px;
+  line-height: 55px;
+  
+}
+
+.share-btn.tr {
+  left: 50%;
+  bottom: 50%;
+  border-top-right-radius: 100%;
+  
+  line-height: 50px;
+  
+}
+.share-btn.bl {
+  right: 50%;
+  top: 50%;
+  border-bottom-left-radius: 100%;
+  
+  text-indent: 2px;
+  line-height: 47px;
+  
+}
+.share-btn.br {
+  left: 50%;
+  top: 50%;
+  border-bottom-right-radius: 100%;
+  
+  line-height: 46px;
+  text-indent: -2px;
+  
+}
+.share-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 0px;
+  margin-top:  0px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(.05,.93,.61,1.6);
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.5);
+  width: 0px;
+  height: 0px;
+  background: #fff;
+}
+
+.share-action:hover ~ .share-container,
+.share-container:hover {
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+.share-container:after,
+.share-container:before {
+  position: absolute;
+  background:  linear-gradient(rgba(136, 221, 255, 0.5) 0%, rgba(34, 153, 221, 0.5) 50%, rgba(136, 221, 255, 0.5) 100%);
+  z-index:4;
+  margin: 0;
+  transition: all 0.5s ease-in-out;
+  content: ' ';
+}
+
+.share-container:before {
+  background:  linear-gradient(left, rgba(136, 221, 255, 0.5) 0%, rgba(34, 153, 221, 0.5) 50%, rgba(136, 221, 255, 0.5) 100%);
+  height: 1px;
+  margin: 50% 50%;
+  width: 0%;
+}
+
+.share-action:hover ~ .share-container:before,
+.share-container:hover:before {
+  width: 85%;
+  left: 0px;
+  margin: 50% 7%;
+}
+
+
+.share-container:after {
+  left: -1px;
+  height: 0%;
+  width: 1px;
+  margin: 50% 50%;
+}
+
+.share-action:hover ~ .share-container:after,
+.share-container:hover:after {
+  height: 85%;
+  margin: 7% 50%;
+}
+
+/*  Font Awesome
+    the iconic font designed for use with Twitter Bootstrap
+    -------------------------------------------------------
+    The full suite of pictographic icons, examples, and documentation
+    can be found at: http://fortawesome.github.com/Font-Awesome/
+
+    License
+    -------------------------------------------------------
+    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
+    http://creativecommons.org/licenses/by/3.0/ A mention of
+    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
+    source code is considered acceptable attribution (most common on the web).
+    If human readable source code is not available to the end user, a mention in
+    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
+    or mobile software).
+
+    Contact
+    -------------------------------------------------------
+    Email: dave@davegandy.com
+    Twitter: http://twitter.com/fortaweso_me
+    Work: http://lemonwi.se co-founder
+
+    */
+@font-face{
+    font-family:FontAwesome;
+    src:url(http://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.eot?#iefix) format('eot'),
+    url(http://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.woff) format('woff'),
+    url(http://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.ttf) format('truetype'),
+    url(http://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.svg#FontAwesome) format('svg');
+    font-weight:400;font-style:normal;}
+
+
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+a [class^="icon-"], a [class*=" icon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+/* makes the font 33% larger relative to the icon container */
+.icon-large:before {
+  vertical-align: top;
+  font-size: 1.3333333333333333em;
+}
+.btn [class^="icon-"], .btn [class*=" icon-"] {
+  /* keeps button heights with and without icons the same */
+
+  line-height: .9em;
+}
+li [class^="icon-"], li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+li .icon-large[class^="icon-"], li .icon-large[class*=" icon-"] {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+
+  width: 1.875em;
+}
+li[class^="icon-"], li[class*=" icon-"] {
+  margin-left: 0;
+  list-style-type: none;
+}
+li[class^="icon-"]:before, li[class*=" icon-"]:before {
+  text-indent: -2em;
+  text-align: center;
+}
+li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
+  text-indent: -1.3333333333333333em;
+}
+/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons */
+.icon-facebook:before             { content: "\f09a"; }
+.icon-twitter:before              { content: "\f099"; }
+.icon-pinterest:before            { content: "\f0d2"; }
+.icon-google-plus:before          { content: "\f0d5"; }
+
+.icon-share:before                { content: "\f045"; }
+​
