@@ -1,8 +1,55 @@
+ ┬┌─┐┌─┐┌─┐ ┌┐ ┬┌─┐
+ ││  └─┐│   ├┴┐│┌─┘
+└┘└─┘└─┘└─┘o└─┘┴└─┘
+                   
+             I reserve the rights to add one!
+
+ 		For now I hope you find Value in the product      
+ 
+
+ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ 
+||L |||u |||k |||e |||@ |||j |||c |||s |||c |||. |||b |||i |||z ||
+||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__||
+|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
+                                                                  
+                                                                  
+                                                                  
+                                                                  
+                              
+
 CC0 1.0 Universal
 ==================
 
 Statement of Purpose
 ---------------------
+
+
+Now be submitted to ancii art storage  :) 
+
+                  
+
+
+   __       _          ____   _                 _     _     
+  / / _   _| | _____  / __ \ (_) ___ ___  ___  | |__ (_)____
+ / / | | | | |/ / _ \/ / _` || |/ __/ __|/ __| | '_ \| |_  /
+/ /__| |_| |   <  __/ | (_| || | (__\__ \ (__ _| |_) | |/ / 
+\____/\__,_|_|\_\___|\ \__,_|/ |\___|___/\___(_)_.__/|_/___|
+                      \____/__/                             
+                                                            
+                                                            
+     
+
+ _           _                _                 _     _     
+| |         | |         ____ (_)               | |   (_)    
+| |    _   _| | _____  / __ \ _  ___ ___  ___  | |__  _ ____
+| |   | | | | |/ / _ \/ / _` | |/ __/ __|/ __| | '_ \| |_  /
+| |___| |_| |   <  __/ | (_| | | (__\__ \ (__ _| |_) | |/ / 
+\_____/\__,_|_|\_\___|\ \__,_| |\___|___/\___(_)_.__/|_/___|
+                       \____// |                            
+                           |__/                             
+                                                            
+                
+
 
 The laws of most jurisdictions throughout the world automatically confer exclusive Copyright and Related Rights (defined below) upon the creator and subsequent owner(s) (each and all, an "owner") of an original work of authorship and/or a database (each, a "Work").
 
@@ -37,3 +84,6 @@ a. No trademark or patent rights held by Affirmer are waived, abandoned, surrend
 b. Affirmer offers the Work as-is and makes no representations or warranties of any kind concerning the Work, express, implied, statutory or otherwise, including without limitation warranties of title, merchantability, fitness for a particular purpose, non infringement, or the absence of latent or other defects, accuracy, or the present or absence of errors, whether or not discoverable, all to the greatest extent permissible under applicable law.
 c. Affirmer disclaims responsibility for clearing rights of other persons that may apply to the Work or any use thereof, including without limitation any person's Copyright and Related Rights in the Work. Further, Affirmer disclaims responsibility for obtaining any necessary consents, permissions or other rights required for any use of the Work.
 d. Affirmer understands and acknowledges that Creative Commons is not a party to this document and has no duty or obligation with respect to this CC0 or use of the Work.
+
+
+

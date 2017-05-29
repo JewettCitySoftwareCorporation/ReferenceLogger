@@ -1,9 +1,68 @@
-# electron-quick-start
+ ┬┌─┐┌─┐┌─┐ ┌┐ ┬┌─┐
+ ││  └─┐│   ├┴┐│┌─┘
+└┘└─┘└─┘└─┘o└─┘┴└─┘
+                   
+                
+Built this application based on 2 Open Source Projects and idea specific business logic.
 
-**Clone and run for a quick way to see Electron in action.**
+    # BPHT5.com
+    # electron-quick-start
 
-This is a minimal Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation.
 
+                If you think this project is helpful you should DONTE!!
+
+         
+This is a minimal tray application to help you logg, Tag, Manage referances
+
+The goal is being able to sort by Tags, Date Stamps, Domains, Topics, keywords, descriptons, titles and all sorts-ed information gathered.
+
+Then enable the user to extract this data in a HUMAN usable fashion & machine readable exports, but if you code to the end point...??
+
+
+I hope you enjoy this product, if you got thoughts for improvments reach out.
+ 
+ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ 
+||L |||u |||k |||e |||@ |||j |||c |||s |||c |||. |||b |||i |||z ||
+||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__||
+|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
+                                                                  
+
+
+
+
+
+
+
+
+
+
+
+
+I already know the stuff below here, you should just call jcsc.biz
+
+
+
+
+
+
+
+
+
+             
+Built this application based on 2 Open Source Projects and idea specific business logic.
+
+    # BPHT5.com
+    # electron-quick-start
+
+
+                If you think this project is helpful you should DONTE!!
+
+
+**Clone, Merge and run for a quick way to see Electron in action putting BPHT5 to use to help you build better user components.  I can't tell every one it was that easy, but you made it this far.**
+
+
+
+        
 **Use this app along with the [Electron API Demos](http://electron.atom.io/#get-started) app for API code examples to help you get started.**
 
 A basic Electron application needs just these files:
@@ -29,7 +88,19 @@ npm install
 npm start
 ```
 
+Now go to BPHT5.com /
+
+Clone this repository
+copy the parts you need into the web-root of the electron app, and 
+then keep refining till you got the end result!!!!!
+
+
+
+
+
 Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+
+Note: This Referance Logger Application was built all in Linux { Linux Mint 17.3 }
 
 ## Resources for Learning Electron
 
@@ -41,5 +112,9 @@ Note: If you're using Linux Bash for Windows, [see this guide](https://www.howto
 - [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
 
 ## License
+
+
+If you think this project is helpful you should DONTE!!
+
 
 [CC0 1.0 (Public Domain)](LICENSE.md)
