@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Application is Loading</title>
+    <meta name="description" content="the application is Loading.">
+    <meta name="author" content="Luke@JCSC.biz">
+
+    <!--  
+
+                        
+             ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ 
+            ||L |||u |||k |||e |||@ |||j |||c |||s |||c |||. |||b |||i |||z ||
+            ||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__||
+            |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
+
+     -->
+    <link rel="shortcut icon" href="favico.ico" type="image/x-icon" />
+
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        svg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        circle {
+            transform-origin: 50% 50%;
+            stroke-width: 2px;
+            stroke: #fff;
+        }
+        
+        #c1 {
+            stroke-dasharray: 7%;
+            animation: xrot 7s infinite linear;
+        }
+        
+        #c2 {
+            stroke-dasharray: 6%;
+            animation: xrot 6s infinite linear;
+        }
+        
+        #c3 {
+            stroke-dasharray: 5%;
+            animation: xrot 5s infinite linear;
+        }
+        
+        #c4 {
+            stroke-dasharray: 4%;
+            animation: xrot 4s infinite linear;
+        }
+        
+        #c5 {
+            stroke-dasharray: 3%;
+            animation: xrot 3s infinite linear;
+        }
+        
+        #c6 {
+            stroke-dasharray: 2%;
+            animation: xrot 2s infinite linear;
+        }
+        
+        @keyframes xrot {
+            0% {
+                transform: rotate(0deg);
+                opacity: 1;
+            }
+            50% {
+                transform: rotate(360deg);
+                opacity: .05;
+            }
+        }
+    </style>
+    <style>
+        /**
+ * Footer Styles
+ */
+        
+        .footer {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 0;
+            background-color: #efefef;
+            text-align: center;
+        }
+        /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+    </style>
+</head>
+
+<body>
+    <svg>
+        <circle id="c1" cx="50%" cy="50%" r="7%" />
+        <circle id="c2" cx="50%" cy="50%" r="6%" />
+        <circle id="c3" cx="50%" cy="50%" r="5%" />
+        <circle id="c4" cx="50%" cy="50%" r="4%" />
+        <circle id="c5" cx="50%" cy="50%" r="3%" />
+        <circle id="c6" cx="50%" cy="50%" r="2%" />
+    </svg>
+
+    <!-- This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.</div> -->
+
+    <div class="footer">
+        <small>
+					&copy; 2017  ~  Created by::  <a href="jcsc.html">Luke@jcsc.biz</a>
+				</small></div>
+
+</body>
+
+</html>

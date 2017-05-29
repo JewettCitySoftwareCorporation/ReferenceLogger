@@ -1,0 +1,397 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Your References</title>
+    <meta name="description" content="Your References">
+    <meta name="author" content="Luke@JCSC.biz">
+    <!--  
+
+                        
+             ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ 
+            ||L |||u |||k |||e |||@ |||j |||c |||s |||c |||. |||b |||i |||z ||
+            ||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__||
+            |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
+
+     -->
+
+    <link rel="shortcut icon" href="favico.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/Splash_styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=800, user-scalable=no">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/demo.css">
+
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Patua+One|Open+Sans);
+        * {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        table {
+            border-collapse: separate;
+            background: #fff;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            margin: 50px auto;
+            -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        thead {
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+        
+        thead th {
+            font-family: 'Patua One', cursive;
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+            text-align: left;
+            padding: 20px;
+            background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY0NmY3ZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzRhNTU2NCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+            background-size: 100%;
+            background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #646f7f), color-stop(100%, #4a5564));
+            background-image: -moz-linear-gradient(#646f7f, #4a5564);
+            background-image: -webkit-linear-gradient(#646f7f, #4a5564);
+            background-image: linear-gradient(#646f7f, #4a5564);
+            border-top: 1px solid #858d99;
+        }
+        
+        thead th:first-child {
+            -moz-border-radius-topleft: 5px;
+            -webkit-border-top-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        
+        thead th:last-child {
+            -moz-border-radius-topright: 5px;
+            -webkit-border-top-right-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        
+        tbody tr td {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            color: #5f6062;
+            font-size: 13px;
+            padding: 20px 20px 20px 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        tbody tr:nth-child(2n) {
+            background: #f0f3f5;
+        }
+        
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+        
+        tbody tr:last-child td:first-child {
+            -moz-border-radius-bottomleft: 5px;
+            -webkit-border-bottom-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        
+        tbody tr:last-child td:last-child {
+            -moz-border-radius-bottomright: 5px;
+            -webkit-border-bottom-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        
+        tbody:hover>tr td {
+            filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=50);
+            opacity: 0.5;
+            /* uncomment for blur effect */
+            /* color:transparent;
+  @include text-shadow(0px 0px 2px rgba(0,0,0,0.8));*/
+        }
+        
+        tbody:hover>tr:hover td {
+            text-shadow: none;
+            color: #2d2d2d;
+            filter: progid: DXImageTransform.Microsoft.Alpha(enabled=false);
+            opacity: 1;
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+
+    <style>
+        /**
+ * Footer Styles
+ */
+        
+        .footer {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 0;
+            background-color: #efefef;
+            text-align: center;
+        }
+        /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+        
+        .table-of-contents {
+            float: right;
+            width: 40%;
+            background: #eee;
+            font-size: 0.8em;
+            padding: 1em 2em;
+            margin: 0 0 0.5em 0.5em;
+        }
+        
+        .table-of-contents ul {
+            padding: 0;
+        }
+        
+        .table-of-contents li {
+            margin: 0 0 0.25em 0;
+        }
+        
+        .table-of-contents a {
+            text-decoration: none;
+        }
+        
+        .table-of-contents a:hover,
+        .table-of-contents a:active {
+            text-decoration: underline;
+        }
+        
+        h3:target {
+            animation: highlight 1s ease;
+        }
+        
+        @keyframes highlight {
+            from {
+                background: yellow;
+            }
+            to {
+                background: white;
+            }
+        }
+    </style>
+
+
+
+
+    <script src="js/prefixfree.min.js"></script>
+    <!--[if lt IE 9]>
+  	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div class="meny">
+        <h2>Project Links</h2>
+        <ul>
+            <li><a href="DataTypes.html">Manage Data Types</a></li>
+            <li><a href="Referances.html">Inspect Referances</a></li>
+            <li><a href="Tag Manager.html">Tag Managment</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </div>
+
+    <div class="meny-arrow"></div>
+
+    <div class="contents">
+        <header class="navbar-wrapper">
+            <h1><a href="#">Referance Logger</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+            <nav>
+                <nav>
+                    <ul>
+                        <li><a href="#YouAreHere" class="active">References</a></li>
+                        <li><a href="cabode.html">Home</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="index.html">Logger</a></li>
+                        <li><a href="jcsc.html">jcsc.biz</a></li>
+                    </ul>
+                </nav>
+            </nav>
+        </header>
+
+        <section id="main-content">
+
+
+
+            <article>
+                <h1>Your References:</h1>
+                <h1></h1>
+
+
+
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="6"><a href="#DataFetch">Manual Data Fetch</a></th>
+                            <th colspan="2"><a href="#import.html">Bulk Import</a></th>
+                            <th colspan="2"><a href="#export.html">Export View</a></th>
+
+                        </tr>
+                        <tr>
+                            <th>uID</th>
+                            <th>Date Stamp</th>
+                            <th>FavIcon</th>
+                            <th>Reference</th>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Tags</th>
+                            <th>Thumbnail</th>
+                            <th>Notes</th>
+                            <th>Page Author</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ch8e</td>
+                            <td></td>
+                            <td><img src="https://ssl.gstatic.com/pantheon/images/favicon.ico" /></td>
+                            <td>URL</td>
+                            <td>7up.com</td>
+                            <td>Drink Me!</td>
+
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ha7d</td>
+                            <td></td>
+                            <td>BOOK</td>
+                            <td>896</td>
+                            <td>Catch 22</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ma8s</td>
+                            <td></td>
+                            <td>URL</td>
+                            <td>76ers.com</td>
+                            <td>Yard Manager</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ee8t</td>
+                            <td></td>
+                            <td>URL</td>
+                            <td>Smedly.org</td>
+                            <td>Goober</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </article>
+
+
+        </section>
+        <!-- This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.</div> -->
+
+        <div class="footer">
+            <small>
+						&copy; 2017  ~  Created by::  <a href="jcsc.html">Luke@jcsc.biz</a>
+				</small></div>
+
+
+        <script src="js/meny.min.js"></script>
+        <script>
+            // Create an instance of Meny
+            var meny = Meny.create({
+                // The element that will be animated in from off screen
+                menuElement: document.querySelector('.meny'),
+
+                // The contents that gets pushed aside while Meny is active
+                contentsElement: document.querySelector('.contents'),
+
+                // [optional] The alignment of the menu (top/right/bottom/left)
+                position: Meny.getQuery().p || 'left',
+
+                // [optional] The height of the menu (when using top/bottom position)
+                height: 200,
+
+                // [optional] The width of the menu (when using left/right position)
+                width: 260,
+
+                // [optional] Distance from mouse (in pixels) when menu should open
+                threshold: 40,
+
+                // [optional] Use mouse movement to automatically open/close
+                mouse: true,
+
+                // [optional] Use touch swipe events to open/close
+                touch: true
+            });
+
+            // API Methods:
+            // meny.open();
+            // meny.close();
+            // meny.isOpen();
+
+            // Events:
+            // meny.addEventListener( 'open', function(){ console.log( 'open' ); } );
+            // meny.addEventListener( 'close', function(){ console.log( 'close' ); } );
+
+            // Embed an iframe if a URL is passed in
+            if (Meny.getQuery().u && Meny.getQuery().u.match(/^http/gi)) {
+                var contents = document.querySelector('.contents');
+                contents.style.padding = '0px';
+                contents.innerHTML = '<div class="cover"></div><iframe src="' + Meny.getQuery().u + '" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
+            }
+        </script>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="js/index.js"></script>
+        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-78768369-2', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

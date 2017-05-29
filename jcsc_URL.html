@@ -1,0 +1,362 @@
+<html ng-app="RefApp">
+
+<head>
+    <title>Add Refeance</title>
+
+
+    <link rel="shortcut icon" href="favico.ico" type="image/x-icon" />
+
+
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.3/firebase-database.js"></script>
+
+    <script>
+        // Use the shorthand notation to retrieve the default app's services
+        //var defaultStorage = firebase.storage();
+        //var defaultDatabase = firebase.database();
+
+
+
+        var app = angular.module("RefApp", ["firebase"]);
+        console.log("app");
+
+
+        app.controller("RefCtrl", function($scope, $http, $firebaseArray) {
+
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyAkzEnGgWxdEx7FCRlMwHWTYdwTWBByZwI",
+                authDomain: "referances-1c228.firebaseapp.com",
+                databaseURL: "https://referances-1c228.firebaseio.com",
+                storageBucket: "referances-1c228.appspot.com",
+                messagingSenderId: "233230328251"
+            };
+            firebase.initializeApp(config);
+
+            console.log(firebase.app().name); // "[DEFAULT]"
+            var Referances = firebase.database().ref();
+            // download the data into a local object
+            $scope.Referances = $firebaseArray(Referances);
+            //var Referances = firebase.database.ref();
+            //var ref = new Firebase("https://referances-1c228.firebaseio.com/");
+            console.log("CTRLER:"); // "[CTRLER]"
+            console.log($scope.Referances); // "[CTRLER]"
+
+
+            deleteRef = function() {
+
+
+                alert("deleted");
+                console.log("Deleted");
+
+            }
+
+
+            submitRef = function() {
+
+
+                try { // statements to try
+                    var d = new Date();
+
+                    var month = d.getMonth() + 1;
+                    var day = d.getDate();
+                    var hour = d.getHours();
+                    var minute = d.getMinutes();
+                    var second = d.getSeconds();
+
+                    var output = d.getFullYear() + '-' +
+                        (('' + month).length < 2 ? '0' : '') + month + '-' +
+                        (('' + day).length < 2 ? '0' : '') + day + ' ' +
+                        (('' + hour).length < 2 ? '0' : '') + hour + ':' +
+                        (('' + minute).length < 2 ? '0' : '') + minute + ':' +
+                        (('' + second).length < 2 ? '0' : '') + second;
+
+                    var favicon = "https://ssl.gstatic.com/pantheon/images/favicon.ico";
+                    var url = document.getElementById("website").value;
+                    //var Tags = "['Tags','more tags','nother tag']";
+                    var Project = "ReferanceProject";
+                    var IMGURL = "URL-Snapshot";
+                    var User = "Luke@jcsc.biz";
+                    var Message = document.getElementById("message").value;
+
+                    var newPostKey = firebase.database().ref().push().key;
+                    console.log(newPostKey);
+                    alert("title", newPostKey);
+                    firebase.database().ref(newPostKey).set({
+                        "IMGURL": "https://ssl.gstatic.com/pantheon/images/favicon.ico",
+                        "Project": "Referances",
+                        "Tags": "['Tags','more tags','nother tag']",
+                        "Title": "some title",
+                        "author": "Luke@jcsc.biz",
+                        "favicon": "https://ssl.gstatic.com/pantheon/images/favicon.ico",
+                        "url": "http://url.biz"
+                    });
+
+                    console.log("submitRef");
+
+
+                } catch (e) {
+                    console.log(e.message);
+                    document.getElementById("demo").innerHTML = e.message; // pass exception object to error handler -> your own function
+                }
+
+
+
+            }
+
+
+        });
+    </script>
+
+    <style>
+        /* === Remove input autofocus webkit === */
+        
+        *:focus {
+            outline: none;
+        }
+        /* === Form Typography === */
+        
+        body {
+            font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+        }
+        
+        .contact_form h2,
+        .contact_form label {
+            font-family: Georgia, Times, "Times New Roman", serif;
+        }
+        
+        .form_hint,
+        .required_notification {
+            font-size: 11px;
+        }
+        /* === List Styles === */
+        
+        .contact_form ul {
+            width: 750px;
+            list-style-type: none;
+            list-style-position: outside;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .contact_form li {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            position: relative;
+        }
+        
+        .contact_form li:first-child,
+        .contact_form li:last-child {
+            border-bottom: 1px solid #777;
+        }
+        /* === Form Header === */
+        
+        .contact_form h2 {
+            margin: 0;
+            display: inline;
+        }
+        
+        .required_notification {
+            color: #d45252;
+            margin: 5px 0 0 0;
+            display: inline;
+            float: right;
+        }
+        /* === Form Elements === */
+        
+        .contact_form label {
+            width: 150px;
+            margin-top: 3px;
+            display: inline-block;
+            float: left;
+            padding: 3px;
+        }
+        
+        .contact_form input {
+            height: 20px;
+            width: 220px;
+            padding: 5px 8px;
+        }
+        
+        .contact_form textarea {
+            padding: 8px;
+            width: 300px;
+        }
+        
+        .contact_form button {
+            margin-left: 156px;
+        }
+        /* form element visual styles */
+        
+        .contact_form input,
+        .contact_form textarea {
+            border: 1px solid #aaa;
+            box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+            border-radius: 2px;
+            padding-right: 30px;
+            -moz-transition: padding .25s;
+            -webkit-transition: padding .25s;
+            -o-transition: padding .25s;
+            transition: padding .25s;
+        }
+        
+        .contact_form input:focus,
+        .contact_form textarea:focus {
+            background: #fff;
+            border: 1px solid #555;
+            box-shadow: 0 0 3px #aaa;
+            padding-right: 70px;
+        }
+        /* === HTML5 validation styles === */
+        
+        .contact_form input:required,
+        .contact_form textarea:required {
+            background: #fff url(images/red_asterisk.png) no-repeat 98% center;
+        }
+        
+        .contact_form input:required:valid,
+        .contact_form textarea:required:valid {
+            background: #fff url(images/valid.png) no-repeat 98% center;
+            box-shadow: 0 0 5px #5cd053;
+            border-color: #28921f;
+        }
+        
+        .contact_form input:focus:invalid,
+        .contact_form textarea:focus:invalid {
+            background: #fff url(images/invalid.png) no-repeat 98% center;
+            box-shadow: 0 0 5px #d45252;
+            border-color: #b03535
+        }
+        /* === Form hints === */
+        
+        .form_hint {
+            background: #d45252;
+            border-radius: 3px 3px 3px 3px;
+            color: white;
+            margin-left: 8px;
+            padding: 1px 6px;
+            z-index: 999;
+            /* hints stay above all other elements */
+            position: absolute;
+            /* allows proper formatting if hint is two lines */
+            display: none;
+        }
+        
+        .form_hint::before {
+            content: "\25C0";
+            color: #d45252;
+            position: absolute;
+            top: 1px;
+            left: -6px;
+        }
+        
+        .contact_form input:focus+.form_hint {
+            display: inline;
+        }
+        
+        .contact_form input:required:valid+.form_hint {
+            background: #28921f;
+        }
+        
+        .contact_form input:required:valid+.form_hint::before {
+            color: #28921f;
+        }
+        /* === Button Style === */
+        
+        button.submit {
+            background-color: #68b12f;
+            background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+            background: -webkit-linear-gradient(top, #68b12f, #50911e);
+            background: -moz-linear-gradient(top, #68b12f, #50911e);
+            background: -ms-linear-gradient(top, #68b12f, #50911e);
+            background: -o-linear-gradient(top, #68b12f, #50911e);
+            background: linear-gradient(top, #68b12f, #50911e);
+            border: 1px solid #509111;
+            border-bottom: 1px solid #5b992b;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            box-shadow: inset 0 1px 0 0 #9fd574;
+            -webkit-box-shadow: 0 1px 0 0 #9fd574 inset;
+            -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+            -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+            -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+            color: white;
+            font-weight: bold;
+            padding: 6px 20px;
+            text-align: center;
+            text-shadow: 0 -1px 0 #396715;
+        }
+        
+        button.submit:hover {
+            opacity: .85;
+            cursor: pointer;
+        }
+        
+        button.submit:active {
+            border: 1px solid #20911e;
+            box-shadow: 0 0 10px 5px #356b0b inset;
+            -webkit-box-shadow: 0 0 10px 5px #356b0b inset;
+            -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+            -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+            -o-box-shadow: 0 0 10px 5px #356b0b inset;
+        }
+    </style>
+    <!--  Put in file for compontitization...?  -->
+    <!--   <link rel="stylesheet" media="screen" href="styles.css">  -->
+
+</head>
+
+<body ng-controller="RefCtrl">
+    <div class="container">
+
+        <form class="contact_form" action="#" method="post" name="contact_form">
+            <ul>
+                <li>
+                    <h2>URL Logger:</h2>
+                    <span class="required_notification">* Denotes Required Field</span>
+                </li>
+
+                <li>
+                    <label for="website">References:</label>
+                    <input type="url" name="website" placeholder="http://www.url.com" required pattern="(http|https)://.+" />
+                    <span class="form_hint">Proper format "http://someaddress.com"</span>
+                </li>
+                <li>
+                    <label for="message">Message:</label>
+                    <textarea name="message" cols="40" rows="6"></textarea>
+                </li>
+                <li>
+                    <label for="tags">Tags:</label>
+                    <textarea name="tags" cols="20" rows="3"></textarea>
+                </li>
+                <li>
+
+                    <button class="submit" type="submit" onclick="submitRef()">Submit Form</button>
+                </li>
+            </ul>
+
+            <button ng-click="count = count + 1" ng-init="count=0">
+                    Increment</button><span> count: {{count}}</span>
+        </form>
+        <p id="demo"></p>
+
+    </div>
+    <hr />
+
+
+
+</body>
+
+</html>

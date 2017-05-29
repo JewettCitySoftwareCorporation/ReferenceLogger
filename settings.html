@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Settings For Logging Your References</title>
+    <meta name="description" content="Settings">
+    <meta name="author" content="Luke@JCSC.biz">
+    <!--  
+
+                        
+             ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ 
+            ||L |||u |||k |||e |||@ |||j |||c |||s |||c |||. |||b |||i |||z ||
+            ||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__||
+            |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
+
+     -->
+
+    <link rel="shortcut icon" href="favico.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/Splash_styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=800, user-scalable=no">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/demo.css">
+
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+
+    <style>
+        /**
+ * Footer Styles
+ */
+        
+        .footer {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 0;
+            background-color: #efefef;
+            text-align: center;
+        }
+        /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+        
+        .table-of-contents {
+            float: right;
+            width: 40%;
+            background: #eee;
+            font-size: 0.8em;
+            padding: 1em 2em;
+            margin: 0 0 0.5em 0.5em;
+        }
+        
+        .table-of-contents ul {
+            padding: 0;
+        }
+        
+        .table-of-contents li {
+            margin: 0 0 0.25em 0;
+        }
+        
+        .table-of-contents a {
+            text-decoration: none;
+        }
+        
+        .table-of-contents a:hover,
+        .table-of-contents a:active {
+            text-decoration: underline;
+        }
+        
+        h3:target {
+            animation: highlight 1s ease;
+        }
+        
+        @keyframes highlight {
+            from {
+                background: yellow;
+            }
+            to {
+                background: white;
+            }
+        }
+    </style>
+
+
+
+
+    <script src="js/prefixfree.min.js"></script>
+    <!--[if lt IE 9]>
+  	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div class="meny">
+        <h2>Project Links</h2>
+        <ul>
+            <li><a href="DataTypes.html">Manage Data Types</a></li>
+            <li><a href="Referances.html">Inspect Referances</a></li>
+            <li><a href="Tag Manager.html">Tag Managment</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </div>index.html
+
+    <div class="meny-arrow"></div>
+    <div class="splash fade-in">
+        <h1 class="splash-title fade-in">Please Donate!</h1>
+        <h6>Jewett City Software Coporation</h6>
+        <a href="#" class="splash-arrow fade-in"><img src="img/down-arrow.png" alt="" /></a>
+    </div>
+    <div class="contents">
+        <header class="navbar-wrapper">
+            <h1><a href="index.html">Reference Logger</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+            <nav>
+                <ul>
+                    <li><a href="#YouAreHere" class="active">Settings</a></li>
+                    <li><a href="cabode.html">Home</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="index.html">Logger</a></li>
+                    <li><a href="jcsc.html">jcsc.biz</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="main-content">
+
+
+
+            <article>
+                <h1>Application Settings:</h1>
+                <h1></h1>
+
+
+            </article>
+
+
+        </section>
+        <!-- This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.</div> -->
+
+        <div class="footer">
+            <small>
+						&copy; 2017  ~  Created by::  <a href="jcsc.html">Luke@jcsc.biz</a>
+				</small></div>
+
+
+        <script src="js/meny.min.js"></script>
+        <script>
+            // Create an instance of Meny
+            var meny = Meny.create({
+                // The element that will be animated in from off screen
+                menuElement: document.querySelector('.meny'),
+
+                // The contents that gets pushed aside while Meny is active
+                contentsElement: document.querySelector('.contents'),
+
+                // [optional] The alignment of the menu (top/right/bottom/left)
+                position: Meny.getQuery().p || 'left',
+
+                // [optional] The height of the menu (when using top/bottom position)
+                height: 200,
+
+                // [optional] The width of the menu (when using left/right position)
+                width: 260,
+
+                // [optional] Distance from mouse (in pixels) when menu should open
+                threshold: 40,
+
+                // [optional] Use mouse movement to automatically open/close
+                mouse: true,
+
+                // [optional] Use touch swipe events to open/close
+                touch: true
+            });
+
+            // API Methods:
+            // meny.open();
+            // meny.close();
+            // meny.isOpen();
+
+            // Events:
+            // meny.addEventListener( 'open', function(){ console.log( 'open' ); } );
+            // meny.addEventListener( 'close', function(){ console.log( 'close' ); } );
+
+            // Embed an iframe if a URL is passed in
+            if (Meny.getQuery().u && Meny.getQuery().u.match(/^http/gi)) {
+                var contents = document.querySelector('.contents');
+                contents.style.padding = '0px';
+                contents.innerHTML = '<div class="cover"></div><iframe src="' + Meny.getQuery().u + '" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
+            }
+        </script>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="js/index.js"></script>
+        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
