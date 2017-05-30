@@ -1,8 +1,10 @@
+  Built by: Luke@jcsc.biz
+
  ┬┌─┐┌─┐┌─┐ ┌┐ ┬┌─┐
  ││  └─┐│   ├┴┐│┌─┘
 └┘└─┘└─┘└─┘o└─┘┴└─┘
 
-This application was built based on 2 open source projects and idea specific business logic.
+This application was built based on two open source projects and idea specific business logic.
 
 # BPHT5.com
 # electron-quick-start
@@ -24,10 +26,12 @@ I hope you enjoy this product, if you got thoughts for improvments reach out.
 
 
             If you think this project is helpful you should DONTE!!
-To Use
+## To Use
 
-To clone and run this repository you'll need Git and Node.js (which comes with npm) installed on your computer. From your command line:
+To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
+ 
+```bash
 # Clone this repository
 git clone https://github.com/JewettCitySoftwareCorporation/ReferenceLogger
 # Go into the repository
@@ -36,13 +40,16 @@ cd ReferenceLogger
 npm install
 # Run the app
 npm start
+```
+
+
 Note: This Referance Logger Application was built all in Linux { Linux Mint 17.3 }
 
-Resources
+## Resources
 
 ...datpoints...
 
-License
+## License
 
 If you think this project is helpful you should DONTE!!
 
