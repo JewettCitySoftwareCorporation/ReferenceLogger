@@ -17,7 +17,7 @@
     "author": "Luke@jcsc.biz",
     "license": "CC-license.jcsc.biz",
     "devDependencies": {
-        "electron": "~1.6.2"
+        "electron": "~9.1.0"
     },
     "dependencies": {
         "electron-positioner": "^3.0.0",
